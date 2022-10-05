@@ -1,0 +1,52 @@
+@import '../core/_mixin';
+@import '../core/_colors';
+@import '../core/fonts';
+
+.btn {
+  height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 1px;
+  border-radius: 4px;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &_bd-c_white {
+    border-color: $white;
+  }
+
+  &_bd-c_grey-3 {
+    border-color: $grey-3;
+  }
+
+  &_bg-c_blue-2 {
+    background: $blue-2;
+  }
+
+  &_bg-c_white {
+    background: $white;
+  }
+
+  &_font_variant-1 {
+    @include font(Lato-Regular, 13px, 16px, $white);
+  }
+
+  &_font_variant-2 {
+    @include font(Lato-Regular, 13px, 16px, $darck-1);
+  }
+
+  &_font_variant-3 {
+    @include font(Lato-Semibold, 15px, 18px, $white);
+  }
+
+  &_size_s {
+    width: 184px;
+  }
+
+  &_size_m {
+    width: 370px;
+  }
+}

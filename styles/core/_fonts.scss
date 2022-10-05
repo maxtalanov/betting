@@ -1,0 +1,16 @@
+$Fonts:(
+  Lato-Bold,
+  Lato-Heavy,
+  Lato-Regular,
+  Lato-Semibold,
+  Raleway-ExtraBold,
+);
+
+@each $font in Fonts {
+  @font-face {
+    font-family: #{$font};
+    font-display: swap;
+    src: url(../../fonts/#{$font}.ttf);
+  }
+}
+

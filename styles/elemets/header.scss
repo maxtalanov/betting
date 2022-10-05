@@ -1,0 +1,35 @@
+@import '../core/_colors';
+
+.header {
+  min-height: 100px;
+  background: $header_bg;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20%;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+
+    .header {
+      padding: 0 4%;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav {
+
+    .header {
+      padding: 0 2%;
+    }
+  }
+}

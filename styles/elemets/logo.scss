@@ -1,0 +1,15 @@
+@import '../core/_mixin';
+@import '../core/_colors';
+@import '../core/fonts';
+
+.logo {
+  &__link {
+    @include font(Raleway-ExtraBold, 28px, 32.87px, $white);
+    text-transform: uppercase;
+  }
+
+  &__span {
+    @include font(Raleway-ExtraBold,28px, 32.87px, $blue-3);
+    text-transform: uppercase;
+  }
+}

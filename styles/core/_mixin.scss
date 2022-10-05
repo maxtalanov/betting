@@ -1,0 +1,6 @@
+@mixin font($fontName, $size, $height, $color) {
+  font-family: $fontName, Arial, sans-serif;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}

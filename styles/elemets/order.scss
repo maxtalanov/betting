@@ -1,0 +1,26 @@
+@import '../core/_mixin';
+@import '../core/_colors';
+@import '../core/fonts';
+
+.order {
+  min-height: 920px;
+  padding: 120px 374px 150px;
+  background: no-repeat $darck-2 url(../../assets/background/order.png);
+  object-fit: contain;
+
+  &__title {
+    @include font(Lato-Heavy, 36px, 43px, $white);
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__title-span {
+    color: $blue-2;
+  }
+
+  &__subtitle {
+    @include font(Lato-Regular, 18px, 22px, $grey);
+    align-items: center;
+    margin-top: 30px;
+  }
+}

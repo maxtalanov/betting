@@ -1,0 +1,49 @@
+@import '../core/_mixin';
+@import '../core/_colors';
+@import '../core/fonts';
+
+.nav {
+ &__list {
+   gap: 0 60px;
+ }
+
+  &__el {
+
+  }
+
+  &__el-link {
+    @include font(Lato-Semibold, 13px, 16px, $white);
+    text-transform: uppercase;
+  }
+
+  &__el-link_type_active {
+    color: $blue-4;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .nav {
+
+    &__list {
+      gap: 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+
+    &__list {
+      gap: 0 10px;
+    }
+  }
+}
+
+//@media screen and (max-width: 360px) {
+//  .nav {
+//
+//    &__list {
+//      gap: 0 10px;
+//    }
+//  }
+//}

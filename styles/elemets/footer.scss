@@ -1,0 +1,39 @@
+@import '../core/_mixin';
+@import '../core/_colors';
+@import '../core/fonts';
+
+.footer {
+  gap: 0 38px;
+  background: $footer_bg;
+  min-height: 80px;
+  padding: 0 20%;
+
+  &__copyright {
+    @include font(Lato-Regular, 13px, 15.6px, $white);
+  }
+
+  &__copyright-span {
+    @include font(Lato-Regular, 13px, 15.6px, $white);
+    text-transform: uppercase;
+  }
+
+  &__mony {
+    @include font(Lato-Regular, 13px, 15.6px, $grey-1);
+  }
+
+  &__contact {
+    @include font(Lato-Regular, 13px, 15.6px, $white);
+  }
+
+  &__icon {
+    padding: 0 10px 0 0;
+  }
+
+  &__line {
+    max-width: 1px;
+    height: 18px;
+    border-left: solid 1px $grey-1;
+  }
+}
+
+

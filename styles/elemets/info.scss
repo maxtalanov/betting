@@ -1,0 +1,61 @@
+@import '../core/_mixin';
+@import '../core/_colors';
+@import '../core/fonts';
+
+.info {
+  width: 100%;
+  background: no-repeat url(../../assets/background/info.png);
+  object-fit: contain;
+  padding-top: 100px;
+
+  &__container {
+    width: 42%;
+    min-height: 444px;
+    padding: 102px 0 202px 0;
+    margin-left: 20%;
+  }
+
+  &__title {
+    @include font(Lato-Bold, 48px, 58px, $darck);
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  &__title-span {
+    color: $blue-2;
+  }
+
+  &__list {}
+
+  &__list-title {
+    @include font(Lato-Bold, 20px, 24px, $darck);
+    width: 74%;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__el {
+    @include font(Lato-Regular, 20px, 24px, $darck);
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+    &::before {
+      content: '\2013';
+      padding-right: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 0 30px;
+    margin-top: 80px;
+    border-radius: 4px;
+  }
+}
